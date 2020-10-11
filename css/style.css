@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+  color: hsl(234, 12%, 34%);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  padding: 15px 0 0;
+}
+body p {
+  color: hsl(229, 6%, 66%);
+}
+body h1,
+h2 {
+  font-weight: 600;
+}
+body h2 {
+  padding-bottom: 5px;
+  font-style: 20px;
+  font-size: 1.2rem;
+}
+body .header p {
+  width: 450px;
+}
+.header .heading__span {
+  display: block;
+  font-size: 28px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.header h1 {
+  padding-bottom: 15px;
+}
+body .header {
+  text-align: center;
+  padding-bottom: 25px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+.container > div:not(:nth-of-type(2)) {
+  align-self: center;
+}
+.container > div:not(:nth-of-type(2)),
+.container .center_box > div {
+  width: 100%;
+  background-color: white;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 25px;
+  border-top: 4px solid;
+}
+.container p {
+  line-height: 1.4;
+  padding-bottom: 20px;
+}
+.container img {
+  float: right;
+}
+.container .center_box {
+  display: flex;
+  flex-direction: column;
+}
+.container .Supervisor {
+  border-color: hsl(180, 62%, 55%) !important;
+}
+.center_box .Team_Builder {
+  margin-bottom: 25px;
+  border-color: hsl(0, 78%, 62%) !important;
+}
+.center_box .karma {
+  border-color: hsl(34, 97%, 64%) !important;
+}
+.container .calculator {
+  border-color: hsl(212, 86%, 64%) !important;
+}
+.attribution {
+  padding-top: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 25px 10px;
+    height: auto;
+  }
+  .header p {
+    margin: 0 auto;
+    width: 75% !important;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+}
